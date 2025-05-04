@@ -1,0 +1,69 @@
+<mxfile>
+  <diagram name="Страница-1" id="UQseJ8r8Y5TNJVJ0G3yQ">
+    <mxGraphModel dx="1200" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <!-- Layer 0: Основные элементы -->
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Блок A0: Увольнение сотрудника (основной) -->
+        <mxCell id="A0" value="&lt;b&gt;A0: Увольнение сотрудника&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font color=&quot;#0000FF&quot;&gt;&lt;i&gt;Входы:&lt;/i&gt;&lt;/font&gt;&lt;br&gt;- Заявление об увольнении&lt;br&gt;- Обходной лист&lt;br&gt;- Копия приказа&lt;br&gt;&lt;font color=&quot;#FF0000&quot;&gt;&lt;i&gt;Выходы:&lt;/i&gt;&lt;/font&gt;&lt;br&gt;- Трудовая книжка&lt;br&gt;- Запись в книге учета&lt;br&gt;&lt;font color=&quot;#00AA00&quot;&gt;&lt;i&gt;Механизмы:&lt;/i&gt;&lt;/font&gt;&lt;br&gt;- Руководитель&lt;br&gt;- Отдел кадров&lt;br&gt;- Бухгалтерия&lt;br&gt;&lt;font color=&quot;#9900CC&quot;&gt;&lt;i&gt;Условия:&lt;/i&gt;&lt;/font&gt;&lt;br&gt;- Трудовое законодательство&lt;br&gt;- 1С «Зарплата и кадры»" 
+              style="swimlane;whiteSpace=wrap;html=1;fontSize=12;rounded=1;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="120" width="400" height="300"/>
+        </mxCell>
+
+        <!-- Подпроцессы внутри A0 -->
+        
+        <!-- A1: Подготовка к увольнению -->
+        <mxCell id="A1" value="&lt;b&gt;A1: Подготовка к увольнению&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font color=&quot;#0066CC&quot;&gt;Вход:&lt;/font&gt; Заявление&lt;br&gt;&lt;font color=&quot;#CC0000&quot;&gt;Выход:&lt;/font&gt; Приказ" 
+              style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f3ff;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="320" y="180" width="120" height="80"/>
+        </mxCell>
+
+        <!-- A2: Оформление обходного листа -->
+        <mxCell id="A2" value="&lt;b&gt;A2: Оформление обходного листа&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font color=&quot;#0066CC&quot;&gt;Вход:&lt;/font&gt; Приказ&lt;br&gt;&lt;font color=&quot;#CC0000&quot;&gt;Выход:&lt;/font&gt; Обходной лист" 
+              style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f3ff;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="480" y="180" width="120" height="80"/>
+        </mxCell>
+
+        <!-- A3: Расчет в бухгалтерии -->
+        <mxCell id="A3" value="&lt;b&gt;A3: Расчет в бухгалтерии&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font color=&quot;#0066CC&quot;&gt;Вход:&lt;/font&gt; Обходной лист&lt;br&gt;&lt;font color=&quot;#CC0000&quot;&gt;Выход:&lt;/font&gt; Расчеты" 
+              style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f3ff;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="320" y="300" width="120" height="80"/>
+        </mxCell>
+
+        <!-- A4: Оформление трудовой книжки -->
+        <mxCell id="A4" value="&lt;b&gt;A4: Оформление трудовой книжки&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font color=&quot;#0066CC&quot;&gt;Вход:&lt;/font&gt; Приказ&lt;br&gt;&lt;font color=&quot;#CC0000&quot;&gt;Выход:&lt;/font&gt; Трудовая книжка" 
+              style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f3ff;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="480" y="300" width="120" height="80"/>
+        </mxCell>
+
+        <!-- Связи между подпроцессами -->
+        <mxCell id="conn1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" 
+                parent="1" source="A1" target="A2" edge="1">
+          <mxGeometry relative="1" width="50" height="50"/>
+        </mxCell>
+        
+        <mxCell id="conn2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" 
+                parent="1" source="A2" target="A3" edge="1">
+          <mxGeometry relative="1" width="50" height="50"/>
+        </mxCell>
+        
+        <mxCell id="conn3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" 
+                parent="1" source="A3" target="A4" edge="1">
+          <mxGeometry relative="1" width="50" height="50"/>
+        </mxCell>
+
+        <!-- Внешние стрелки -->
+        <mxCell id="in1" value="Заявление об увольнении" style="shape=note;whiteSpace=wrap;html=1;fillColor=#d4e6ff;" parent="1" vertex="1">
+          <mxGeometry x="150" y="210" width="120" height="30"/>
+        </mxCell>
+        
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" 
+                parent="1" source="in1" target="A1" edge="1">
+          <mxGeometry relative="1" width="50" height="50"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
